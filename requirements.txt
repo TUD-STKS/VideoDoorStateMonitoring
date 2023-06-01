@@ -1,7 +1,6 @@
-joblib
+jupyterlab
 matplotlib
 pandas
-pyrcn==0.0.15
+pyrcn
+scikit-learn==1.2.0
 seaborn
-scikit-learn>=1.0
-jupyterlab

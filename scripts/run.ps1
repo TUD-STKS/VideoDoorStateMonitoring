@@ -1,12 +1,13 @@
-# "Template Repository for Research Papers with Python Code"
+# "Non-Standard Echo State Networks for Video Door State Monitoring"
 #
-# Copyright (C) 2021 Peter Steiner
+# Copyright (C) 2023 Peter Steiner
 # License: BSD 3-Clause
 
-python.exe -m venv .virtualenv
+python.exe -m venv venv
 
-.\.virtualenv\Scripts\activate.ps1
+.\venv\Scripts\activate.ps1
 python.exe -m pip install -r requirements.txt
-python.exe .\src\main.py --plot --export --serialize
+python.exe -m pip install --editable .
+python.exe .\src\main.py --fit_basic_esn
 
 deactivate
