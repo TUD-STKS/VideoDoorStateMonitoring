@@ -3,3 +3,5 @@
 set -e  # don't allow errors to fail silently
 echo `which pip`  # in case the wrong `pip` is used, this will let us debug
 pip install --editable .  # install the custom library
+apt install msttcorefonts -qq
+rm ~/.cache/matplotlib -rf
